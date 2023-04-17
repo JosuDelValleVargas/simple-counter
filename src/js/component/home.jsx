@@ -1,24 +1,13 @@
 import React from "react";
-
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 //create your first component
-const Home = () => {
+const Home = (props) => {
 	return (
-		<div className="text-center">
-			<h1 className="text-center mt-5">Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working...
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
+		<div className="container">
+		<div className="row text-center">
+			<h1 className="col bg-dark text-white " ><i className="fa fa-clock"></i>   {props.numero6}   {props.numero5}   {props.numero4}   {props.numero3}   {props.numero2}   {props.numero1}</h1>
+		</div>
 		</div>
 	);
 };
